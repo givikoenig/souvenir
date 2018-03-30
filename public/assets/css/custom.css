@@ -1,0 +1,449 @@
+--------------------------------------------------------------
+
+  Template Name: Subash Ecommerce Responsive Bootstrap Template
+  Description: This is html5 template
+  Author: codecarnival
+  Version: 1.0
+  Design and Developed by: codecarnival
+
+Note: This is the file where you can add your custom styles to change the look of the theme. But don't modify "style.css" file.
+
+---------------------------------------------------------------*/
+
+/* ----------------------------------------------------
+	You can put your custom css code here: 
+-------------------------------------------------------*/
+@font-face {
+	font-family: 'ALSRubl';
+	src: url(../fonts/rouble.ttf);
+}
+@font-face {
+	font-family: 'ALSRubl';
+	src: url(../fonts/rouble.eot);
+}
+@font-face {
+	font-family: 'ALSRubl';
+	src: url(../fonts/rouble.woff);
+}
+@font-face {
+	font-family: 'ALSRubl';
+	src: url(../fonts/rouble.woff2);
+}
+@font-face {
+	font-family: 'ALSRubl';
+	src: url(../fonts/rouble.svg);
+}
+
+.rouble{
+	font-family: 'ALSRubl', sans-serif;
+}
+.featured {
+  display: inline-block;
+  float: right;
+  font-family: roboto;
+  font-size: 13px;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 4px;
+  margin-top: -10px;
+}
+
+.sale-product {
+  border: 1px solid #fb2424;
+  border-radius: 50%;
+  color: #fb2424;
+}
+
+.hit-product {
+  border: 1px solid #87d44e;
+  border-radius: 50%;
+  color: #87d44e;
+}
+
+.new-product {
+  border: 1px solid #fcab5b;
+  border-radius: 50%;
+  color: #fcab5b;
+}
+.spec-product {
+  border: 1px solid #a85bd0;
+  border-radius: 50%;
+  color: #a85bd0;
+}
+.close-modal {
+  color: #ff7f00;
+  font-size: 32px;
+ }
+
+.modal-dialog {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    transform: translate(-25%, -25%);
+}
+
+.modal-dialog2 {
+    margin-left: 30%;
+    margin-top: 30%;
+    transform: translate(-25%, -25%);
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.modal-title {
+	color: #999;
+    text-transform: uppercase;
+}
+.pwd {
+	border: 1px solid #ccc!important;	
+}
+
+.button {
+  background: #ff7f00;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03) inset;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.button span {
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 2;
+  padding: 11px 20px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+.button::after {
+  background: rgba(0, 0, 0, 0.09) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  z-index: 1;
+}
+.button:hover::after { width: 100% }
+.button-border span {
+  border: 0 none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 20px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: transparent;
+  color: #4FC1F0;
+  font-size: 15px;
+  border: 1px solid #4FC1F0;
+}
+.button-border span:hover {
+  box-shadow: -200px 0 0 #4FC1F0 inset;
+  color: #fff;
+  border-color: #4FC1F0;
+}
+.button.extra-small span { padding: 8px 30px; font-size: 14px; }
+.button.extra-small i { padding: 11px; width: 38px; font-size: 13px; }
+
+.button::after {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.alert-success {
+  background-color: #fcd6b1;
+  border-color: #fdbf82;
+  color: #6c3906;
+}
+.children {
+  padding-left: 25px;
+}
+.borGreen {
+  border: 1px solid #fcab5b;
+  border-radius: 5px;
+  padding: 15px;
+}
+.wrap_result{
+    opacity: .6; 
+    background-color: #eee;
+    border: 1px solid #fcab5b;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    left: 35%;
+    top: 45%;
+    width: 400px;
+    height: 180px;
+    text-align: center;
+    display: none;
+    z-index: 5005;
+}
+.cart_result{
+  background-color: #fff; /* #fff4ea;*/
+    border: 1px solid #fcab5b;
+    border-radius: 5px;
+    padding: 20px;
+    position: fixed;
+    left: 40%;
+    top: 45%;
+    width: 370px;
+    height: 180px;
+    text-align: center;
+    display: none;
+    z-index: 5005;
+}
+.reply-details {
+  background: #eeeeee;
+  color: #666666;
+  font-size: 12px;
+}
+.like-li {
+  cursor: pointer;
+}
+.like-span {
+  font-size: 12px;
+  color: #999999;
+}
+.like-count {
+  font-size: 12px;
+  color: #999999;
+}
+.like-span:hover,
+.like-count:hover{
+  color: #ff7f00;
+}
+.like-click{
+  font-size: 12px;
+  color: #999999;
+  border: none;
+  background: #fff;
+}
+.like-click:hover{
+  color: #ff7f00;
+}
+.style-grid{}
+.style-list{}
+.grid-row{}
+.list-row{}
+#list-view{}
+#grid-view{}
+.shop-option{
+  padding: 10px 0;
+}
+.sort a{
+  color: #aebcb9;
+}
+.sort a:focus,
+.sort a:hover{
+  color: #ff7f00;
+}
+.color-title{
+  text-transform: none;
+}
+.prod-price{
+  color: #999999;
+}
+.tab-old-price{
+  text-decoration: line-through;
+  font-size: 16px;
+  color: #999999;
+}
+.total-cart-pro {
+  max-height: 520px;
+  overflow-y: auto;
+}
+.dec.qtybutton,
+.inc.qtybutton{
+  cursor: pointer;
+}
+/* -------------------------------------
+    10.5 Product Cart plus minus
+------------------------------------- */
+.cart-plus-minus2 {
+  border: 1px solid #cccccc;
+  height: 25px;
+  text-align: center;
+  width: 90px;
+  color: #666666;
+}
+.qtybutton2 {
+  background: #cccccc none repeat scroll 0 0;
+  height: 100%;
+  width: 30%;
+}
+.dec.qtybutton2 {
+  float: left;
+  cursor: pointer;
+}
+.inc.qtybutton2 {
+  float: right;
+  cursor: pointer;
+}
+.beside-button {
+  position: relative;
+}
+.count-add-button{
+  position: absolute;
+  top: -3px;
+  right: -50px;
+}
+.field label{
+  font-size: 15px;
+  padding-right: 10px;
+  /*width: 100px;*/
+}
+/*.field input{width: 100%;}*/
+.wl-pbl{color: #999999;}
+.shipping-btn{
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.btn-primary{
+  background-color: #ff7f00!important;
+  border-color: #ff7f00!important;
+}
+.value{
+  min-height: 70px;
+  border: 1px solid #ff7f00;
+  padding: 5px;
+}
+.order-complete-content{
+  visibility: hidden;
+}
+.order-details{
+  text-transform: none!important;
+  display: inline!important;
+  color: #999999!important;
+}
+.myorders {
+  font-size: 12px!important;
+  line-height: 16px!important;
+}
+.myorders .td-title-1 {
+  font-size: 12px!important;
+}
+.txtleft {
+  text-align: left!important;
+}
+.p-10-30{
+  padding: 10px 30px!important;
+}
+.prod-wish {
+background: transparent;
+border: 1px solid #ddd;
+border-radius: 50%;
+color: #999999;
+display: block;
+font-size: 14px;
+font-size: 16px;
+height: 30px;
+line-height: 28px;
+text-align: center;
+width: 30px;
+
+}
+.prod-wish:hover,
+.prod-wish:focus {
+border-color: #ff7f00;
+color: #fff;
+background-color: #ff7f00;
+}
+.hidden_el {
+  visibility: hidden;
+}
+.go-to-btn {
+  bottom: 13%;
+  right: 9%;
+}
+.noproduct-img img{
+  width: 60%;
+}
+.bread-crumbs{
+  font-size: 20px;
+}
+.soption-btn{
+  padding-left: 30px;
+  font-family: "Didact Gothic";
+  color: #666666;
+}
+.ttl-2{
+  margin-top: 0;
+}
+.oldprice {
+  padding-left: 20px;
+  text-decoration: line-through;
+}
+.quote-border::before {
+  left: 30px!important;
+}
+.quote-border{
+  color: #999999!important;
+}
+.if_empty img {
+   width: 570px;
+}
+.ribbon-price {
+  top: 35px;
+  left: 25px;
+}
+.remember:hover,
+.remember:focus{
+  color: #ff7f00!important;
+  text-decoration: none;
+}
+.enter:hover,
+.enter:focus{
+  background-color: #ffffff!important;
+  color: #ff7f00!important;
+}
+.prod-product-info {
+  text-align: left!important;
+  margin: 0 10px;
+}
+.plr-10 {
+  padding-left: 10px!important;
+  padding-right: 10px!important;
+}
+.ssub-menu {
+  /*width: 6000%;*/
+  padding-bottom: 15px;
+  border: 1px solid #ddd;
+}
+.smenu-item {
+  padding-right: 10px;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+  .cart_result{
+    position: fixed;
+    left: 5%;
+    top: 45%;
+    width: 90%;
+    height: 180px;
+  }
+  .if_empty img {
+   width: 80%;
+  }
+}

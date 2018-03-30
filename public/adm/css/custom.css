@@ -1,0 +1,30 @@
+hr{border: none;color: #acb1b8; background-color: #acb1b8; height: 1px;}
+.delimg{}
+.slideimg{}
+.btn-disabled {
+	background: #394a59;
+	border-color: #394a59;
+}
+.widget-title {
+  color: #999999;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.product-cat a {
+	color: #777777;
+}
+.product-cat a:hover,
+.product-cat a:focus {
+	color: #ff7f00;
+}
+.products-active a {
+	color: #ff7f00;
+}
+.sidebar-literas {
+	font-size: 16px;
+	font-weight: 700;
+}
+.tovar_sum_red {
+	color: #ff7f00
+}
+
