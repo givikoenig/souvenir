@@ -12,15 +12,6 @@
 */
 use App\Mail\Queued_email;
 
-// \Igaster\LaravelCities\Geo::ApiRoutes();
-
-// Route::get('/mail/queued', function () {
-//     // send an email to "batman@batcave.io"
-//     Mail::to('batman@batcave.io')->later(5, new Queued_email);
-
-//     return view('welcome');
-// });
-
 Route::get('sendmail', 'SendMailController@sendMail');
 
 Route::get('robots.txt', function() {
@@ -146,7 +137,6 @@ Route::group(['prefix'=>'admin', 'middleware'=>'auth'], function() {
 });
 
 Route::group(['midleware' => 'auth'], function() {
-	// Route::auth();
 	Route::get('/profile', 'ProfileController@execute')->name('profile');
 	Route::post('/profile', 'ProfileController@editCurrentUserProfile')->name('edit-profile');
 	Route::get('/logout','Auth\LoginController@logout');
